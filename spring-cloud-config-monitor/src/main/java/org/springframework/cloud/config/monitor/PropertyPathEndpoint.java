@@ -121,7 +121,7 @@ public class PropertyPathEndpoint
 					services.add("*:" + profile);
 				}
 				else if (!name.startsWith("application")) {
-					services.add(name + ":" + profile);
+					services.add(name + ":" + profile+":*");
 				}
 				index = stem.indexOf("-", index + 1);
 			}
